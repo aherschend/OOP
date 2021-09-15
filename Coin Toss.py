@@ -15,6 +15,10 @@ def main():
        for count in range(10):
            my_coin.toss()
            
+           #user could have control over this code, so we need to make our attributes private
+           #because it's hidden, he can't access it
+           my_coin.sideup = 'Heads'
+
            # Display the side of the coin that is facing up.
            print('This side is up:', my_coin.get_sideup())
 
