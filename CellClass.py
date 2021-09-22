@@ -1,28 +1,28 @@
 class CellClass:
 
     # attributes that are inside of this method
-    def __init__(self):
-        self.__manufact = 0
-        self.__model = ''
-        self.__retail_price = 0 
+    def __init__(self, manufact, model, price):
+        self.__manufact = manufact
+        self.__model = model
+        self.__retail_price = price
 
 
-    def set_manufact(self,man):
-        self.__manufact = man
+    def set_manufact(self,manufact):
+        self.__manufact = manufact
 
     def set_model(self, model):
         self.__model = model
 
-    def get_retail_price(self,rp):
-        self.__retail_price = rp
+    def get_retail_price(self,price):
+        self.__retail_price = price
 
-    def get_manufact(self,man):
+    def get_manufact(self):
         return self.__manufact
 
-    def get_model(self, model):
+    def get_model(self):
         return self.__model
         
-    def get_retail_price(self,rp):
+    def get_retail_price(self):
         return self.__retail_price
 
         
