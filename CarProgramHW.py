@@ -10,6 +10,10 @@ def main():
 
     my_car = c.Car(model, make, speed)
 
+    print()
+    print('Accelerating...')
+    print()
+
     #1 accelerate
     my_car.accelerate()
     print('Current Speed: ', my_car.get_speed())
@@ -25,6 +29,10 @@ def main():
     #5 accelerate
     my_car.accelerate()
     print('Current Speed: ', my_car.get_speed())
+
+    print()
+    print('Braking...')
+    print()
 
     #1 brake
     my_car.brake()
